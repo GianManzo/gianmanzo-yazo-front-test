@@ -2,13 +2,13 @@ import { Colors } from '~/Global-styles';
 import * as C from './styles';
 import { DotsThree } from 'phosphor-react';
 
-type Props = {
+interface Props {
   projeto: string;
   status: string;
   produtos: string;
   inicio: string;
   termino: string;
-};
+}
 
 export const Project = ({ projeto, status, produtos, inicio, termino }: Props) => {
   return (
