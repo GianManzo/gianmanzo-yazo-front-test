@@ -1,9 +1,11 @@
 import './reset.css';
-import { Projects } from './components/Projects/Projects';
+import { GlobalStyles } from './Global-styles';
+import { Projects } from './Page/Projects';
 
 export const App = () => {
   return (
     <>
+      <GlobalStyles />
       <Projects />
     </>
   );
