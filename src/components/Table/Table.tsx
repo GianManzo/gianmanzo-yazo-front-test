@@ -1,6 +1,6 @@
+import * as C from './styles';
 import { Search } from '../Search/Search';
 import { Project } from '../Project/Project';
-import * as C from './styles';
 
 export const Table = () => {
   return (

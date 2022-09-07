@@ -1,20 +1,18 @@
-import { Colors } from '~/Global-styles';
 import styled from 'styled-components';
+import { Colors } from '~/Global-styles';
 
 export const WidthMenu = '14.6875rem';
 
 export const Menu = styled.div`
-  position: fixed;
   align-items: center;
   border: 1px solid ${Colors.gray};
   display: flex;
+  font: 700 0.875rem 'Lato', sans-serif;
   flex-direction: column;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
   height: 100vh;
   padding: 5rem 0 2.5rem 0;
+  position: fixed;
   width: ${WidthMenu};
-  font-size: 0.875rem;
 
   img {
     height: 3.75rem;
@@ -32,36 +30,37 @@ export const ListMenu = styled.ul`
   margin-bottom: 17.5rem;
 
   li {
-    padding: 1rem 1.5625rem 1rem 1rem;
     display: flex;
     gap: 0.5rem;
+    padding: 1rem 1.5625rem 1rem 1rem;
 
     &:nth-child(2) {
-      border-radius: 8px;
       background-color: ${Colors.redLight};
+      border-radius: 8px;
       color: ${Colors.red};
     }
   }
 `;
 
 export const SignOut = styled.div`
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 80%;
+
   &::before {
-    content: '';
-    width: 100%;
-    height: 1px;
     background-color: #000000;
-    opacity: 0.1;
+    content: '';
+    height: 1px;
     margin-bottom: 2.5rem;
+    opacity: 0.1;
+    width: 100%;
   }
 
   a {
-    display: flex;
     align-items: center;
-    gap: 0.5rem;
     color: #000000;
+    display: flex;
+    gap: 0.5rem;
   }
 `;

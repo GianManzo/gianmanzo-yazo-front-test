@@ -1,5 +1,5 @@
-import Logo from '../../assets/Afonso@2x.png';
 import * as C from './styles';
+import Logo from '../../assets/Afonso@2x.png';
 import { ChartBar, Archive, Users, GearSix, SignOut } from 'phosphor-react';
 
 export const Menu = () => {
@@ -7,7 +7,7 @@ export const Menu = () => {
     <>
       <C.Menu>
         <C.ImgBox>
-          <img src={Logo} alt='' />
+          <img src={Logo} alt='Logo projeto' />
         </C.ImgBox>
         <C.ListMenu>
           <li>

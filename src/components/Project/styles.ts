@@ -5,9 +5,7 @@ export const Tr = styled.tr`
   width: 100%;
 
   td:not(td:first-child) {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
+    font: 700 0.75rem 'Lato', sans-serif;
   }
 
   td:nth-child(2n-6) {
@@ -20,12 +18,12 @@ export const Tr = styled.tr`
 
   td:nth-child(2) {
     div {
-      display: flex;
-      width: 10px;
-      height: 10px;
       align-items: center;
-      gap: 1rem;
       border-radius: 50%;
+      display: flex;
+      gap: 1rem;
+      height: 10px;
+      width: 10px;
 
       @media (max-width: 1280px) {
         align-items: baseline;
@@ -36,27 +34,27 @@ export const Tr = styled.tr`
 
   td:last-child {
     div {
-      width: 32px;
-      height: 32px;
-      background: transparent;
-      display: flex;
-      justify-content: center;
       align-items: center;
-      border-radius: 8px;
+      background: transparent;
       border: 1px solid ${Colors.gray};
+      border-radius: 8px;
+      display: flex;
+      height: 32px;
+      justify-content: center;
+      width: 32px;
     }
   }
 `;
 
 export const TdTitle = styled.td`
-  display: flex;
   align-items: center;
+  display: flex;
   font-family: 'Poppins', sans-serif;
 
   div {
-    width: 40px;
-    height: 40px;
     border-radius: 8px;
+    height: 40px;
     margin-inline: 1rem;
+    width: 40px;
   }
 `;
